@@ -17,28 +17,28 @@
     .notice-box {
       display: inline-block;
       border: 1px solid #ccc;
-      padding: 10px 15px;
+      padding: 10px 20px;
       margin-top: 15px;
     }
     .notice-text {
       color: red;
       font-size: 13px;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
     }
     .cloudflare {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 10px;
+      gap: 6px;
+      font-size: 12px;
     }
     .cloudflare img {
-      height: 20px;
+      height: 18px;
+      vertical-align: middle;
     }
-    .cloudflare small a {
-      font-size: 11px;
+    .cloudflare a {
       text-decoration: none;
       color: black;
-      margin-left: 3px;
     }
     .wait {
       margin-top: 30px;
@@ -49,20 +49,27 @@
   <h1>Firewall.wiki Cloud Security™ WAF</h1>
 
   <div class="logo">
-    <img src="https://i.imgur.com/IJ0CEfW.png" alt="Shield Icon" width="50">
+    <img src="https://i.imgur.com/NPz7n1o.png" alt="Security Icon" width="50">
   </div>
 
   <div class="notice-box">
-    <div class="notice-text">Miền không hợp lệ. Liên hệ với Quản trị viên<br>trang nếu vấn đề này vẫn tiếp diễn.</div>
+    <div class="notice-text">
+      Miền truy cập không hợp lệ. Vui lòng liên hệ với Quản trị viên<br>
+      nếu sự cố này vẫn tiếp tục xảy ra.
+    </div>
     <div class="cloudflare">
-      <img src="https://developers.cloudflare.com/favicon.png" alt="Cloudflare logo">
-      <small>
-        <a href="#">Quyền riêng tư</a> |
-        <a href="#">Điều khoản</a>
-      </small>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Cloudflare_Logo.svg/1280px-Cloudflare_Logo.svg.png" alt="Cloudflare">
+      <span><a href="#">Quyền riêng tư</a> | <a href="#">Điều khoản</a></span>
     </div>
   </div>
 
   <p class="wait">Xác minh truy cập hợp lệ, xin chờ 0 giây…</p>
+
+  <!-- ✅ TỰ ĐỘNG CHUYỂN HƯỚNG SAU 3 GIÂY -->
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://fbzll.net"; // Thay bằng trang đích thật của bạn
+    }, 3000);
+  </script>
 </body>
 </html>
