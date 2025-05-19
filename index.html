@@ -1,49 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-<meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-<meta name="robots" content="noindex, nofollow" />
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js?onload=onloadTurnstileCallback" async defer></script>
-<title> Firewall.Wiki Cloud Security™ WAF</title>
-<style type="text/css">
-body{
-  font-family : "courier new",courier,monospace;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh;
-  
-}
-</style>
-<script type="text/javascript" charset="utf-8" data-cfasync="false">var _87716="KGZ1bmN0aW9uKCl7Cgl2YXIgYSA9IGZ1bmN0aW9uKCkge3RyeXtyZXR1cm4gISF3aW5kb3cuYWRkRXZlbnRMaXN0ZW5lcn0gY2F0Y2goZSkge3JldHVybiAhMX0gfSwKCWIgPSBmdW5jdGlvbihiLCBjKSB7YSgpID8gZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigiRE9NQ29udGVudExvYWRlZCIsIGIsIGMpIDogZG9jdW1lbnQuYXR0YWNoRXZlbnQoIm9ucmVhZHlzdGF0ZWNoYW5nZSIsIGIpfTsKCQliKGZ1bmN0aW9uKCl7CgkJCXZhciB0aW1lbGVmdCA9IDU7CgkJCXZhciBkb3dubG9hZFRpbWVyID0gc2V0SW50ZXJ2YWwoZnVuY3Rpb24oKXsKCQkJCXRpbWVsZWZ0LS07CgkJCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiY291bnRkb3dudGltZXIiKS50ZXh0Q29udGVudCA9IHRpbWVsZWZ0OwoJCQkJaWYodGltZWxlZnQgPD0gMCkKCQkJCWNsZWFySW50ZXJ2YWwoZG93bmxvYWRUaW1lcik7CgkJCX0sMTAwMCk7CgkJCXNldFRpbWVvdXQoZnVuY3Rpb24oKXsKCQkJCXZhciBub3cgPSBuZXcgRGF0ZSgpOwoJCQkJdmFyIHRpbWUgPSBub3cuZ2V0VGltZSgpOwoJCQkJdGltZSArPSAzMDAgKiAxMDAwOwoJCQkJbm93LnNldFRpbWUodGltZSk7CgkJCQlkb2N1bWVudC5jb29raWUgPSAnVG56MExfVzhMazdkYk1zY1JydzcwVG1vMGxBPUo1Qk1CXy1zd2RuRUhJYjdaSm9rcnlVNkJuVScgKyAnOyBleHBpcmVzPScgKyAnTW9uLCAwNi1GZWItMjMgMDU6NDM6NDggR01UJyArICc7IHBhdGg9Lyc7CgkJCQkvL2phdmFzY3JpcHQgcHV6emxlIGZvciBicm93c2VyIHRvIGZpZ3VyZSBvdXQgdG8gZ2V0IGFuc3dlcgoJCQkJaWYoIXdpbmRvdy5fcGhhbnRvbSB8fCAhd2luZG93LmNhbGxQaGFudG9tKXsvKnBoYW50b21qcyovCmlmKCF3aW5kb3cuX19waGFudG9tYXMpey8qcGhhbnRvbWFzIFBoYW50b21KUy1iYXNlZCB3ZWIgcGVyZiBtZXRyaWNzICsgbW9uaXRvcmluZyB0b29sKi8KaWYoIXdpbmRvdy5CdWZmZXIpey8qbm9kZWpzKi8KaWYoIXdpbmRvdy5lbWl0KXsvKmNvdWNoanMqLwppZighd2luZG93LnNwYXduKXsvKnJoaW5vKi8KaWYoIXdpbmRvdy53ZWJkcml2ZXIpey8qc2VsZW5pdW0qLwppZighd2luZG93LmRvbUF1dG9tYXRpb24gfHwgIXdpbmRvdy5kb21BdXRvbWF0aW9uQ29udHJvbGxlcil7LypjaHJvbWl1bSBiYXNlZCBhdXRvbWF0aW9uIGRyaXZlciovCmlmKCF3aW5kb3cuZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmdldEF0dHJpYnV0ZSgid2ViZHJpdmVyIikpewovKmlmKG5hdmlnYXRvci51c2VyQWdlbnQpeyovCmlmKCEvYm90fGN1cmx8a29kaXx4Ym1jfHdnZXR8dXJsbGlifHB5dGhvbnx3aW5odHRwfGh0dHJhY2t8YWxleGF8aWFfYXJjaGl2ZXJ8ZmFjZWJvb2t8dHdpdHRlcnxsaW5rZWRpbnxwaW5nZG9tL2kudGVzdChuYXZpZ2F0b3IudXNlckFnZW50KSl7Ci8qaWYobmF2aWdhdG9yLmNvb2tpZUVuYWJsZWQpeyovCi8qaWYoZG9jdW1lbnQuY29va2llLm1hdGNoKC9eKD86Lio7KT9ccypbMC05YS1mXXszMn1ccyo9XHMqKFteO10rKSg/Oi4qKT8kLykpeyovLypIdHRwT25seSBDb29raWUgZmxhZ3MgcHJldmVudCB0aGlzKi8KCQkJCXZhciBfM180ODc9cGFyc2VJbnQoIjIwMjMwMjA0IiwgMTApICsgcGFyc2VJbnQoIjA0MDIyMDIzIiwgMTApOwoJCQkJLyp9Ki8KLyp9Ki8KfQovKn0qLwp9Cn0KfQp9Cn0KfQp9Cn0KCQkJCS8vZW5kIGphdmFzY3JpcHQgcHV6emxlCgkJCQkvL2hjYXB0Y2hhCgkJCQl2YXIgY2FwdGNoYV9jbGljayA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJjYXB0Y2hhIikudGV4dENvbnRlbnQ7CgkJCQlpZihjYXB0Y2hhX2NsaWNrICE9MSl7CgkJCQkJcmV0dXJuCgkJCQl9CgkJCQl2YXIgeGh0dHAgPSBuZXcgWE1MSHR0cFJlcXVlc3QoKTsKCQkJCXhodHRwLm9ucmVhZHlzdGF0ZWNoYW5nZSA9IGZ1bmN0aW9uKCkgewoJCQkJCWlmICh4aHR0cC5yZWFkeVN0YXRlID09PSA0KSB7CgkJCQkJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdGF0dXMiKS5pbm5lckhUTUwgPSAixJBhbmcgY2h1eeG7g24gaMaw4bubbmciOwoJCQkJCQlsb2NhdGlvbi5yZWxvYWQodHJ1ZSk7CgkJCQkJfQoJCQkJfTsKCQkJCXhodHRwLm9wZW4oIlBPU1QiLCAiLyIsIHRydWUpOwoJCQkJeGh0dHAuc2V0UmVxdWVzdEhlYWRlcignaDNHTHNzZmJuUTd5UG1JRlBUOVhkbGsxcHNrJywgXzNfNDg3KTsgLy9tYWtlIHRoZSBhbnN3ZXIgd2hhdCBldmVyIHRoZSBicm93c2VyIGZpZ3VyZXMgaXQgb3V0IHRvIGJlCgkJCXhodHRwLnNldFJlcXVlc3RIZWFkZXIoJ1gtUmVxdWVzdGVkLXdpdGgnLCAnWE1MSHR0cFJlcXVlc3QnKTsKCQkJeGh0dHAuc2V0UmVxdWVzdEhlYWRlcignWC1SZXF1ZXN0ZWQtVGltZVN0YW1wJywgJycpOwoJCQl4aHR0cC5zZXRSZXF1ZXN0SGVhZGVyKCdYLVJlcXVlc3RlZC1UaW1lU3RhbXAtRXhwaXJlJywgJycpOwoJCQl4aHR0cC5zZXRSZXF1ZXN0SGVhZGVyKCdYLVJlcXVlc3RlZC1UaW1lU3RhbXAtQ29tYmluYXRpb24nLCAnJyk7CgkJCXhodHRwLnNldFJlcXVlc3RIZWFkZXIoJ1gtUmVxdWVzdGVkLVR5cGUnLCAnR0VUJyk7CgkJCXhodHRwLnNldFJlcXVlc3RIZWFkZXIoJ1gtUmVxdWVzdGVkLVR5cGUtQ29tYmluYXRpb24nLCAnR0VUJyk7IC8vRW5jcnlwdGVkIGZvciB0b2RheXMgZGF0ZQoJCQl4aHR0cC53aXRoQ3JlZGVudGlhbHMgPSB0cnVlOwp2YXIgc3csIHNoLCB3dywgd2gsIHY7CnN3ID0gc2NyZWVuLndpZHRoOwpzaCA9IHNjcmVlbi5oZWlnaHQ7Cnd3ID0gd2luZG93LmlubmVyV2lkdGggfHwgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmNsaWVudFdpZHRoIHx8IGRvY3VtZW50LmJvZHkuY2xpZW50V2lkdGggfHwgMDsKd2ggPSB3aW5kb3cuaW5uZXJIZWlnaHQgfHwgZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50LmNsaWVudEhlaWdodCB8fCBkb2N1bWVudC5ib2R5LmNsaWVudEhlaWdodCB8fCAwOwppZiAoKHN3ID0";var _6_953="9IHd3KSAmJiAoc2ggPT0gd2gpKSB7CiAgICB2ID0gdHJ1ZTsKICAgIGlmICghKHd3ICUgMjAwKSAmJiAod2ggJSAxMDApKSB7CiAgICAgICAgdiA9IHRydWU7CiAgICB9Cn0KLy92ID0gdHJ1ZTsgLy90ZXN0IHZhciBudWxsZWQgb3V0IHVzZWQgZm9yIGRlYnVnZ2luZyBwdXJwb3NlCmlmICh2ID09IHRydWUpIHsKCXhodHRwLnNldFJlcXVlc3RIZWFkZXIoJ09tWXBxSmxXUVV2bEZTbnZHcXg1RkcySGVvJywgJ1lVNmFMYUJRUXRoNWNiMjFud0JIbm1ZYTF4RScpOwp9CgkJCQl4aHR0cC5zZXRSZXF1ZXN0SGVhZGVyKCJDb250ZW50LXR5cGUiLCAiYXBwbGljYXRpb24veC13d3ctZm9ybS11cmxlbmNvZGVkIik7CgkJCQl4aHR0cC5zZW5kKCJuYW1lMT1IZW5yeSZuYW1lMj1Gb3JkIik7CgkJCX0sIDYwMDApOyAvKmlmIGNvcnJlY3QgZGF0YSBoYXMgYmVlbiBzZW50IHRoZW4gdGhlIGF1dGggcmVzcG9uc2Ugd2lsbCBhbGxvdyBhY2Nlc3MqLwoJCX0sIGZhbHNlKTsKfSkoKTsK";eval(decodeURIComponent(escape(window.atob(_87716 + _6_953))));</script></head>
+  <meta charset="UTF-8">
+  <title>Firewall.wiki Cloud Security™ WAF</title>
+  <style>
+    body {
+      background-color: white;
+      color: black;
+      font-family: monospace;
+      text-align: center;
+      padding-top: 100px;
+    }
+    .logo {
+      margin-top: 10px;
+    }
+    .notice-box {
+      display: inline-block;
+      border: 1px solid #ccc;
+      padding: 10px 15px;
+      margin-top: 15px;
+    }
+    .notice-text {
+      color: red;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+    .cloudflare {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+    .cloudflare img {
+      height: 20px;
+    }
+    .cloudflare small a {
+      font-size: 11px;
+      text-decoration: none;
+      color: black;
+      margin-left: 3px;
+    }
+    .wait {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Firewall.wiki Cloud Security™ WAF</h1>
 
-  <center>
-    <br />
-    <br /> 
-      <h2><b> Firewall.wiki Cloud Security™ WAF</b></h2><br />
-    <img height="50px" width="69px" src="https://i.imgur.com/A7NFyHW.png" /><br />
-	
-<div id="status">
-<noscript>Vui lòng bật Javascript và tải lại trang.<br /></noscript>
-<div id="cf-captcha"></div>
-<script>
-window.onloadTurnstileCallback = function () {
-    turnstile.render('#cf-captcha', {
-        sitekey: '0x4AAAAAAABeQQK32Aa5-YXc',
-        callback: function(token) {
-			document.getElementById("captcha").innerHTML = "1";
-        },
-    });
-};      
-</script>
-<br /><br />
-Xác minh truy cập hợp lệ, xin chờ <span id="countdowntimer">5</span> giây&hellip;
-</div>
-    <br />
-	 <div id="captcha" style="display:none"></div>
-  </center>
-<script>(function(){var js = "window['__CF$cv$params']={r:'7949549c89dd0503',m:'tvLAcc.VQXo5XcO2kYSDghsqmIk4HflwK20DXNSOAdc-1675575828-0-AbAJUgSxIlwB/4sTFDNphLCCUi+m/Hl7Plv1Xhf6FzQ2GtZiRH/PQUGEOPhIxGPiprivcJE7CSLeFWmMeH2xoF+cjZUVFSOBw20NWaV/g4V7uc1tErdGGcV0VvIYxGFYaQ==',s:[0x6470901e91,0x49b5a683a3],u:'/cdn-cgi/challenge-platform/h/b'};var _cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/cb/invisible.js?cb=7949549c89dd0503',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+  <div class="logo">
+    <img src="https://i.imgur.com/IJ0CEfW.png" alt="Shield Icon" width="50">
+  </div>
+
+  <div class="notice-box">
+    <div class="notice-text">Miền không hợp lệ. Liên hệ với Quản trị viên<br>trang nếu vấn đề này vẫn tiếp diễn.</div>
+    <div class="cloudflare">
+      <img src="https://developers.cloudflare.com/favicon.png" alt="Cloudflare logo">
+      <small>
+        <a href="#">Quyền riêng tư</a> |
+        <a href="#">Điều khoản</a>
+      </small>
+    </div>
+  </div>
+
+  <p class="wait">Xác minh truy cập hợp lệ, xin chờ 0 giây…</p>
+</body>
 </html>
